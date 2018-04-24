@@ -41,7 +41,31 @@ void mostrarUsuariosXSeries(eSerie series[], int cantSeries,eUsuario usuarios[],
     system("pause");
 }
 
-void mostrarSeriesXUsuarios()
+void mostrarSeriesXUsuarios(eSerie series[], int cantSeries,eUsuario usuarios[], int cantUsuarios)
 {
+    int flag=-1;
+    for(int j=0;j<cantSeries;j++)
+    {// buscar el id de la serie
+        if(series[j].estado==1)
+        {//Serie Habilitada
+            printf("\nLa serie: %s",series[j].nombre);
+            printf("\n La ven los siguientes usuarios: \n");
+            for(int i=0;i<cantUsuarios;i++)
+            {//recorro los usuarios para buscar si ve la serie
+                if((series[j].idSerie==usuarios[i].idSerie)&&(usuarios[i].estado==1))
+                {//Usuario Habilitado && ve la serie.
+                    mostrarUsuario(usuarios[i]);
+                    flag=1;// la ve almenos 1 usuario
+                }
 
+            }//for(int i=0;i<cantUsuarios;i++)
+            if(flag==-1)
+            {//la serie no la ve nadie
+                printf("\n Nadie ve esta Serie...\n");
+            }
+            flag=-1;
+            printf("\n---------------\n");
+        }//if(series[j].estado==1)
+    }//for(int j=0;j<cantSeries;j++)
+    system("pause");
 }

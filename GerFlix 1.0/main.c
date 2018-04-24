@@ -43,7 +43,7 @@ int main()
                 mostrarUsuariosXSeries(listaDeSeries, TAMSERIE,listaDeUsuarios, TAMUSUARIO);
                 break;
             case 4:
-
+                mostrarSeriesXUsuarios(listaDeSeries, TAMSERIE,listaDeUsuarios, TAMUSUARIO);
                 break;
             case 9://salir
                 seguir = 'n';
