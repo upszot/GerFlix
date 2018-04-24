@@ -29,7 +29,11 @@ int main()
         menu("\n1. Mostrar el listado de series"
              "\n2. Mostrar el listado de usuarios"
              "\n3. Mostrar el listado de Usuarios con el nombre de la serie que ve"
-             "\n4. Mostrar por cada serie, el nombre de los usuarios que la ven.");
+             "\n4. Mostrar por cada serie, el nombre de los usuarios que la ven."
+             "\n5. Alta de Serie"
+             "\n6. Alta de Usuario"
+             "\n7. Modificar Serie"
+             "\n8. Modificar Usuario");
         scanf("%d",&opcion);
         switch(opcion)
         {
