@@ -40,7 +40,7 @@ int main()
                 mostrarListaUsuarios(listaDeUsuarios,TAMUSUARIO);
                 break;
             case 3:
-
+                mostrarUsuariosXSeries(listaDeSeries, TAMSERIE,listaDeUsuarios, TAMUSUARIO);
                 break;
             case 4:
 

@@ -18,6 +18,7 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
     char nombre[][50]={"Juan","Maria","Pedro","Vanesa","Jose","Luisa","Laura","Marcelo","German","Victoria","Dafne","Antonela","Gisele","Dario","Pedro"};
 
     int serie[15] = {100,100,101,101,102,100,100,103,101,102,103,105,105,100,103};
+//int id[5] = {100,101,102,103,104}; id se series
 
     int i;
 
