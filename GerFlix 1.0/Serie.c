@@ -41,3 +41,25 @@ void inicializarSeriesHardCode(eSerie series[])
     }
 }
 
+void mostrarListaSeries(eSerie series[], int cant)
+{
+    system("cls");
+    printf("\n\n Listado de series cargadas: \n");
+    for(int i=0;i<cant;i++)
+    {
+
+        if(series[i].estado==1)
+        {
+            mostrarSerie(series[i]);
+        }
+    }
+    printf("\n\n No hay mas series para mostrar. \n");
+    system("pause");
+}
+
+void mostrarSerie(eSerie serie)
+{
+    printf("\n Nombre: %s",serie.nombre);
+    printf("\n Genero: %s",serie.genero);
+    printf("\n\n");
+}
