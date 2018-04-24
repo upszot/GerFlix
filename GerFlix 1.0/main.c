@@ -37,7 +37,7 @@ int main()
                 mostrarListaSeries(listaDeSeries,TAMSERIE);
                 break;
             case 2:
-
+                mostrarListaUsuarios(listaDeUsuarios,TAMUSUARIO);
                 break;
             case 3:
 

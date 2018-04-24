@@ -19,8 +19,6 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
 
     int serie[15] = {100,100,101,101,102,100,100,103,101,102,103,105,105,100,103};
 
-
-
     int i;
 
     for(i=0; i<15; i++)
@@ -31,4 +29,24 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
         strcpy(usuarios[i].nombre, nombre[i]);
 
     }
+}
+
+void mostrarListaUsuarios(eUsuario usuarios[], int cant)
+{
+    system("cls");
+    printf("\n\n Listado de usuarios cargados: \n");
+    for(int i=0;i<cant;i++)
+    {
+        if(usuarios[i].estado==1)
+        {
+            mostrarUsuario(usuarios[i]);
+        }
+    }
+    printf("\n\n No hay mas usuarios para mostrar. \n");
+    system("pause");
+}
+
+void mostrarUsuario(eUsuario usuario)
+{
+    printf("\n Nombre: %s",usuario.nombre);
 }

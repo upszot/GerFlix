@@ -61,5 +61,5 @@ void mostrarSerie(eSerie serie)
 {
     printf("\n Nombre: %s",serie.nombre);
     printf("\n Genero: %s",serie.genero);
-    printf("\n\n");
+    printf("\n");
 }
