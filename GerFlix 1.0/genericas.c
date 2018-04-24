@@ -32,7 +32,7 @@ void mostrarUsuariosXSeries(eSerie series[], int cantSeries,eUsuario usuarios[],
             }//for(int j=0;j<cantSeries;j++)
             if(flag==-1)
             {//no encontro la serie o se dio de baja
-                printf("\n Serie Inexistente...\n");
+                printf("\n Serie Inexistente o dada de baja...\n");
             }
             flag=-1;
             printf("---------------\n");
